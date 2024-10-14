@@ -94,8 +94,9 @@ public class EditCommand extends Command {
         Email updatedEmail = editPersonDescriptor.getEmail().orElse(personToEdit.getEmail());
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
+        Remark updatedRemark = editPersonDescriptor.getRemark().orElse(personToEdit.getRemark());
 
-        return new Person(updatedName, updatedRole, updatedPhone, updatedEmail, updatedAddress, updatedTags);
+        return new Person(updatedName, updatedRole, updatedPhone, updatedEmail, updatedAddress, updatedTags, updatedRemark);
     }
 
     @Override
@@ -131,6 +132,7 @@ public class EditCommand extends Command {
         private Role role;
         private Phone phone;
         private Email email;
+        private Remark remark;
         private Address address;
         private Set<Tag> tags;
 
@@ -147,6 +149,7 @@ public class EditCommand extends Command {
             setEmail(toCopy.email);
             setAddress(toCopy.address);
             setTags(toCopy.tags);
+            setRemark(toCopy.remark);
         }
 
         /**
@@ -165,6 +168,9 @@ public class EditCommand extends Command {
         }
         public void setRole(Role role) {
             this.role = role;
+        }
+        public void setRemark(Remark remark) {
+            this.remark = remark;
         }
 
         public Optional<Role> getRole() {
@@ -210,6 +216,10 @@ public class EditCommand extends Command {
          */
         public Optional<Set<Tag>> getTags() {
             return (tags != null) ? Optional.of(Collections.unmodifiableSet(tags)) : Optional.empty();
+        }
+
+        public Optional<Remark> getRemark() {
+            return Optional.ofNullable(remark);
         }
 
         @Override

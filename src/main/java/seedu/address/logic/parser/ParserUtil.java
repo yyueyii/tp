@@ -62,6 +62,11 @@ public class ParserUtil {
         return new Role(trimmedRole);
     }
 
+    public static Remark parseRemark(String remark) throws ParseException {
+        String trimmedRemark = remark.trim();
+        return new Remark(trimmedRemark);
+    }
+
     /**
      * Parses a {@code String phone} into a {@code Phone}.
      * Leading and trailing whitespaces will be trimmed.
