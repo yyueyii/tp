@@ -30,7 +30,7 @@ public class BatchEditCommand extends Command {
             + PREFIX_TAG + "sec2 " + PREFIX_TAG + "sec3";
 
     public static final String MESSAGE_BATCH_EDIT_EACH_PERSON_CHANGED = "Tag Changed: %s -> %s";
-    public static final String MESSAGE_BATCH_EDIT_NO_PERSON_WITH_TAG = "No person with Tag= %s is found";
+    public static final String MESSAGE_BATCH_EDIT_NO_PERSON_WITH_TAG = "No person with Tag %s is found";
 
     private final Tag oldTag;
     private final Tag newTag;
