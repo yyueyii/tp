@@ -119,12 +119,12 @@ public class EditCommand extends Command {
 
         Name updatedName = editPersonDescriptor.getName().orElse(personToEdit.getName());
         Sex updatedSex = editPersonDescriptor.getSex().orElse(personToEdit.getSex());
-        Role updatedRole = editPersonDescriptor.getRole().orElse(personToEdit.getRole());
+        Role role = personToEdit.getRole();
         Phone updatedPhone = editPersonDescriptor.getPhone().orElse(personToEdit.getPhone());
         Email updatedEmail = editPersonDescriptor.getEmail().orElse(personToEdit.getEmail());
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
-        return new Person(updatedName, updatedSex, updatedRole, updatedPhone, updatedEmail, updatedAddress,
+        return new Person(updatedName, updatedSex, role, updatedPhone, updatedEmail, updatedAddress,
                 updatedTags);
     }
 
@@ -137,13 +137,13 @@ public class EditCommand extends Command {
 
         Name updatedName = editPersonDescriptor.getName().orElse(studentToEdit.getName());
         Sex updatedSex = editPersonDescriptor.getSex().orElse(studentToEdit.getSex());
-        Role updatedRole = editPersonDescriptor.getRole().orElse(studentToEdit.getRole());
+        Role role = studentToEdit.getRole();
         Phone updatedPhone = editPersonDescriptor.getPhone().orElse(studentToEdit.getPhone());
         Email updatedEmail = editPersonDescriptor.getEmail().orElse(studentToEdit.getEmail());
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(studentToEdit.getAddress());
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(studentToEdit.getTags());
         AttendanceCount oldAttendanceCount = studentToEdit.getAttendanceCount();
-        return new Student(updatedName, updatedSex, updatedRole, updatedPhone, updatedEmail, updatedAddress,
+        return new Student(updatedName, updatedSex, role, updatedPhone, updatedEmail, updatedAddress,
                 updatedTags, oldAttendanceCount);
     }
 
@@ -180,7 +180,6 @@ public class EditCommand extends Command {
     public static class EditPersonDescriptor {
         private Name name;
         private Sex sex;
-        private Role role;
         private Phone phone;
         private Email email;
         private Address address;
@@ -195,7 +194,6 @@ public class EditCommand extends Command {
         public EditPersonDescriptor(EditPersonDescriptor toCopy) {
             setName(toCopy.name);
             setSex(toCopy.sex);
-            setRole(toCopy.role);
             setPhone(toCopy.phone);
             setEmail(toCopy.email);
             setAddress(toCopy.address);
@@ -223,13 +221,6 @@ public class EditCommand extends Command {
 
         public Optional<Name> getName() {
             return Optional.ofNullable(name);
-        }
-        public void setRole(Role role) {
-            this.role = role;
-        }
-
-        public Optional<Role> getRole() {
-            return Optional.ofNullable(role);
         }
 
         public void setPhone(Phone phone) {
