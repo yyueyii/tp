@@ -37,13 +37,14 @@ public class FindCommand extends Command {
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": Finds all persons that match the specified attributes "
             + "and displays them as a list with index numbers.\n"
-            + "Parameters: [" + PREFIX_NAME + "NAME] "
+            + "Parameters: [INDEX] [" + PREFIX_NAME + "NAME] "
             + "[" + PREFIX_PHONE + "PHONE] "
             + "[" + PREFIX_EMAIL + "EMAIL] "
             + "[" + PREFIX_ADDRESS + "ADDRESS] "
             + "[" + PREFIX_TAG + "TAG]...\n"
-            + "Example: " + COMMAND_WORD
-            + PREFIX_PHONE + " 91234567 ";
+            + "Note that only 1 type of parameter should be present. \n"
+            + "Example: " + COMMAND_WORD + " "
+            + PREFIX_PHONE + "91234567";
 
     private Index targetIndex = null;
     private Phone phoneNumber = null;
