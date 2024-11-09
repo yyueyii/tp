@@ -47,11 +47,11 @@ public class EditCommand extends Command {
             + "Parameters: [" + "INDEX" + "] "
             + "[" + PREFIX_NAME + "NAME] "
             + "[" + PREFIX_SEX + "SEX] "
-            + "[" + PREFIX_ROLE + "ROLE] "
             + "[" + PREFIX_PHONE + "PHONE] "
             + "[" + PREFIX_EMAIL + "EMAIL] "
             + "[" + PREFIX_ADDRESS + "ADDRESS] "
             + "[" + PREFIX_TAG + "TAG]...\n"
+            + "Note that role is not editable. \n"
             + "Example: " + COMMAND_WORD + " 1 "
             + PREFIX_PHONE + "91234567 "
             + PREFIX_EMAIL + "johndoe@example.com";
