@@ -17,17 +17,12 @@ You can reach us at the email `xingye[at]u.nus.edu`
 [[github](https://github.com/zhou-colla)]
 [[portfolio](team/zhouxingye.md)]
 
-* Role: Project Advisor
-
 ### Haleema Irfan
 
 <img src="images/haleemairfan.png" width="200px">
 
-[[github](http://github.com/haleemairfan)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/yyueyii)]
 
-* Role: Developer
-* Responsibilities: In charge of Logic
 
 ### Varatharaju Mithuna
 
@@ -35,8 +30,6 @@ You can reach us at the email `xingye[at]u.nus.edu`
 
 [[github](http://github.com/miuna9890)]
 
-* Role: Developer
-* Responsibilities: Data
 
 ### Li Yueyi
 
@@ -44,16 +37,10 @@ You can reach us at the email `xingye[at]u.nus.edu`
 
 [[github](http://github.com/yyueyii)]
 
-* Role: Developer
-* Responsibilities: Software Development
 
 ### Paing Khant Kyaw
 
 <img src="images/minkhanteain.png" width="200px">
 
 [[github](http://github.com/minkhanteain)]
-[[portfolio](team/johndoe.md)]
-
-* Role: Developer
-* Responsibilities: UI
 
