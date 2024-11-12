@@ -461,7 +461,7 @@ Priorities: High (Must-Have), Medium (Nice-to-Have), Low (Could-Have), Trivial (
 5.  Commands should be intuitive and simple.
 6.  Command structures should be logical, consistent and memorable.
 7.  All texts should be of appropriate size and easily-readable for users of all ages.
-8.  The color scheme of the user interface should be high-contrast to accommodate for users of all accessibility levels.
+8.  The color scheme of the user interface should easily visible to accommodate for users of all accessibility levels.
 9.  Invalid inputs should be handled gracefully, and the user should be informed clearly of their mistake.
 10.  The user should be promptly informed of the outcome of their action (success/failure) via the feedback box.
 
@@ -633,7 +633,7 @@ Execute the following:
       Execute the following in a blank Cher:
          - `add n/Alex Yeoh s/m r/student p/12345678 a/Alex Street e/alexy@example.com`
          - `add n/Bernice Yu s/f r/student p/98765432 a/Bernice Street e/bernice@example.com`
-         - `add n/Charlotte Oliveiro s/f r/parent p/99998888 a/ Charlotte Street e/charlotte@example.com`
+         - `add n/Charlotte Oliveiro s/f r/parent p/99998888 a/Charlotte Street e/charlotte@example.com`
          - `mark 1`
          - `mark 2`
          - List all persons with the `list` command
